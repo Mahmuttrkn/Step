@@ -1,0 +1,52 @@
+﻿@using EntityLayer.Concrete
+@model List<Guide>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+<style>
+    img {
+        border-radius: 50%;
+    }
+</style>
+
+
+
+
+
+
+    <h1>Siteye Kayıtlı Rehberler</h1>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Name Surname</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Status</th>
+
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            count++;
+    <tr>
+        <td>@count</td>
+        <td><img src="@item.Image" height="75" width="75" /></td>
+        <td>@item.Name</td>
+        <td>@item.Description</td>
+        <td><a href="/Admin/Guide/EditGuide/@item.GuideID" class="btn btn-outline-primary">Edit</a></td>
+        <td><a href="/Admin/Guide/ChangeToStatus/@item.GuideID" class="btn btn-outline-info">@item.Status</a></td>
+       
+        
+
+
+
+    </tr>
+        }
+    </table>
+    <a href="/Admin/Guide/AddGuide" class="btn btn-outline-info">New Guide</a>
+

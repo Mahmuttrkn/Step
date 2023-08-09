@@ -1,0 +1,12 @@
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\bin\Release\net5.0\DTOLayer.deps.json
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\bin\Release\net5.0\DTOLayer.dll
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\bin\Release\net5.0\ref\DTOLayer.dll
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\bin\Release\net5.0\DTOLayer.pdb
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.csproj.AssemblyReference.cache
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.AssemblyInfoInputs.cache
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.AssemblyInfo.cs
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.csproj.CoreCompileInputs.cache
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.dll
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\ref\DTOLayer.dll
+C:\Users\mturkan\source\repos\ProjeX\DTOLayer\obj\Release\net5.0\DTOLayer.pdb

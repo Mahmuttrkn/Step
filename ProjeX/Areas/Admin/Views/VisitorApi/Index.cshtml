@@ -1,0 +1,37 @@
+﻿@model List<ProjeX.Areas.Admin.Models.VisitorViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h1>Api Ziyaretçi Listesi</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+        <th>Ülke</th>
+        <th>Mail</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.City</td>
+            <td>@item.Country</td>
+            <td>@item.Mail</td>
+            <td><a class="btn btn-outline-info" href="/Admin/VisitorApi/VisitorDelete/@item.VistorID">Sil</a></td>
+            <td><a class="btn btn-outline-primary" href="/Admin/VisitorApi/VisitorUpdate/@item.VistorID">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/VisitorApi/VisitorCreate" class="btn btn-outline-secondary">Ziyaretçi Ekle</a>
+

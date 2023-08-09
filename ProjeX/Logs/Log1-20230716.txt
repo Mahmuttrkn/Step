@@ -1,0 +1,203 @@
+2023-07-16T16:31:30.7871150+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T16:31:30.8057820+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T16:31:30.8059895+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T16:33:59.5885736+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T16:33:59.6019021+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T16:33:59.6020418+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T16:41:52.8359761+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T16:41:52.8646122+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T16:41:52.8649262+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T16:44:01.4081312+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T16:44:01.4194232+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T16:44:01.4195208+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:33:06.5256190+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:33:06.5391522+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:33:06.5392763+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:43:35.1316597+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:43:35.1400208+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:43:35.1401183+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:43:36.3229675+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:43:36.3324198+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:43:36.3325488+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:47:25.1503106+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:47:25.1593153+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:47:25.1594368+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:47:27.6302972+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:47:27.6428671+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:47:27.6430443+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:48:30.7925490+03:00 80000009-0002-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials b12-20020a92c84c000000b0032afe23820bsm4178469ilq.17 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials b12-20020a92c84c000000b0032afe23820bsm4178469ilq.17 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at ProjeX.Areas.Admin.Controllers.MailController.Index(MailRequest p) in C:\Users\mturkan\source\repos\ProjeX\ProjeX\Areas\Admin\Controllers\MailController.cs:line 46
+   at lambda_method30(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-16T17:50:53.3464401+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:50:53.3550932+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:50:53.3551766+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:51:03.6142623+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:51:03.6253160+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:51:03.6254321+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:51:06.3357211+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:51:06.3478473+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:51:06.3479852+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:51:29.0405946+03:00 8000000e-0000-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials q14-20020a05600000ce00b003062b2c5255sm16589795wrx.40 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials q14-20020a05600000ce00b003062b2c5255sm16589795wrx.40 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at ProjeX.Areas.Admin.Controllers.MailController.Index(MailRequest p) in C:\Users\mturkan\source\repos\ProjeX\ProjeX\Areas\Admin\Controllers\MailController.cs:line 46
+   at lambda_method30(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-16T17:59:22.0255022+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T17:59:22.0363499+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T17:59:22.0364670+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T17:59:56.0796272+03:00 80000006-0007-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials m9-20020adfe949000000b0031128382ed0sm16651697wrn.83 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials m9-20020adfe949000000b0031128382ed0sm16651697wrn.83 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at ProjeX.Areas.Admin.Controllers.MailController.Index(MailRequest p) in C:\Users\mturkan\source\repos\ProjeX\ProjeX\Areas\Admin\Controllers\MailController.cs:line 46
+   at lambda_method30(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-16T18:03:44.6282893+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T18:03:44.6378851+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T18:03:44.6379892+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T18:03:58.0452179+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T18:03:58.0690541+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T18:03:58.0692807+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T18:04:20.9940175+03:00 8000000d-0006-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials y7-20020a5d6147000000b0031412b685d2sm16640065wrt.32 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials y7-20020a5d6147000000b0031412b685d2sm16640065wrt.32 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at ProjeX.Areas.Admin.Controllers.MailController.Index(MailRequest p) in C:\Users\mturkan\source\repos\ProjeX\ProjeX\Areas\Admin\Controllers\MailController.cs:line 46
+   at lambda_method1(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-16T18:06:47.0899061+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-07-16T18:06:47.0984041+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-07-16T18:06:47.0984909+03:00  [INF] Content root path: "C:\Users\mturkan\source\repos\ProjeX\ProjeX" (b5d60022)
+2023-07-16T18:06:53.8793217+03:00 80000011-0006-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at MailKit.Net.SocketUtils.Connect(String host, Int32 port, IPEndPoint localEndPoint, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.Connect(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ProjeX.Areas.Admin.Controllers.MailController.Index(MailRequest p) in C:\Users\mturkan\source\repos\ProjeX\ProjeX\Areas\Admin\Controllers\MailController.cs:line 45
+   at lambda_method30(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

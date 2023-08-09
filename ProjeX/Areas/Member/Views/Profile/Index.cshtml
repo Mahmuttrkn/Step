@@ -1,0 +1,28 @@
+﻿@model ProjeX.Areas.Member.Models.ProfileModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Düzenlenecek Profil Sayfası</h1>
+
+<form method="post" enctype="multipart/form-data">
+    @Html.Label("Adınız")
+    <input type="text" asp-for="name" class="form-control" />
+    @Html.Label("Soyadınız")
+    <input type="text" asp-for="surname" class="form-control" />
+    @Html.Label("Mail Adresiniz")
+    <input type="text" asp-for="mail" class="form-control" />
+    @Html.Label("Şifreniz")
+    <input type="text" asp-for="password" class="form-control" />
+    @Html.Label("Telefon Numarası Giriniz")
+    <input type="text" asp-for="phonenumber" class="form-control" />
+    <br />
+     <div class="form-group">
+        <label>Choose Profile Image</label>
+        <input type="file" asp-for="image" />
+
+    </div>
+    <br />
+    <button class="btn btn-primary">Update</button>
+</form>

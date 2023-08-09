@@ -1,0 +1,31 @@
+﻿@model DTOLayer.DTOS.Announcement.AnnouncementUpdateDTO
+@{
+    ViewData["Title"] = "AnnouncementUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Duyuru Güncelleme Sayfası</h1>
+<form method="post" class="table table-bordered">
+    @Html.HiddenFor(x => x.AnnouncementID)
+    <div class="form-group">
+        @Html.Label("Title")
+        <input type="text" asp-for="Title" class="form-control" />
+        
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Content")
+        <input type="text" asp-for="Content" class="form-control" />
+        
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Date")
+        <input type="date" asp-for="Date" class="form-control" />
+    </div>
+    <br />
+    <br />
+    <button class="btn btn-outline-success">Kaydet</button>
+</form>
+
+

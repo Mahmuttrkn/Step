@@ -1,0 +1,32 @@
+﻿@model ProjeX.Models.MailRequest
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Mail Page</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        @Html.Label("Alıcı Mail Adresi")
+        <input type="text" asp-for="ReceiverMail" class="form-control" />
+       
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Konu Başlığı")
+        <input type="text" asp-for="Subject" class="form-control" />
+     
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("İçerik")
+        <input type="text" asp-for="Body" class="form-control" />
+        
+    </div>
+
+    <button class="btn btn-outline-success">Send</button>
+</form>
+

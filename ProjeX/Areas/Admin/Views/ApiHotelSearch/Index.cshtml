@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProjeX.Areas.Admin.Models.ApiHotelSerchViewModel.Result>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h1>Otel Listesi</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>#</th>
+        <th>Otel Adı</th>
+        <th>Otel Puanı</th>
+        <th>Otel Değerlendirmesi</th>
+        <th>Detaylar</th>
+   
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.name</td>
+            <td>@item.reviewScore</td>
+            <td>@item.reviewScoreWord</td>
+            <td><a href="@item.photoMainUrl" class="btn btn-outline-primary">Detaylar</a></td>
+
+        </tr>
+    }
+</table>

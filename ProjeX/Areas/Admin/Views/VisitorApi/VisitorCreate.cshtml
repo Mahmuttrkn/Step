@@ -1,0 +1,27 @@
+﻿@model ProjeX.Areas.Admin.Models.VisitorViewModel
+@{
+    ViewData["Title"] = "VisitorCreate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ziyaretçi Ekleme</h1>
+<br />
+<form method="post">
+    <label>Ziyaretçi Adı</label>
+    <input type="text" class="form-control" asp-for="Name" />
+    <br />
+    <label>Ziyaretçi Soyadı</label>
+    <input type="text" class="form-control" asp-for="Surname" />
+    <br />
+    <label>Ziyaretçinin Şehri</label>
+    <input type="text" class="form-control" asp-for="City" />
+    <br />
+    <label>Ziyaretçinin Ülkesi</label>
+    <input type="text" class="form-control" asp-for="Country" />
+    <br />
+    <label>Ziyaretçinin Mail Adresi</label>
+    <input type="text" class="form-control" asp-for="Mail" />
+    <br />
+    <button class="btn btn-outline-success">Kaydet</button>
+</form>
+

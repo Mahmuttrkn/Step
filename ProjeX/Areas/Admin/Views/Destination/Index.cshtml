@@ -1,0 +1,45 @@
+﻿@using EntityLayer.Concrete
+@model List<Destination>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Bütün Rotalar</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>City</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Capacity</th>
+        <th>Cover Image</th>
+        <th>Image 2</th>
+        <th>Status</th>
+        <th>Sitede Gör</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+       
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="hidden" >@item.DestinationID</td>
+            <td>@item.City</td>
+            <td>@item.Price</td>
+            <td>@item.Image</td>
+            <td>@item.Capacity</td>
+            <td>@item.CoverImage</td>
+            <td>@item.Image2</td>
+            <td>@item.Status</td>
+            <td><a href="/Destination/Index" class="btn btn-success">Sitede Gör</a></td>
+            <td><a href="/Admin/Destination/DeleteIndex/@item.DestinationID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Admin/Destination/UpdateIndex/@item.DestinationID" class="btn btn-dark">Güncelle</a></td>
+            
+            
+        </tr>
+    }
+</table>
+<a href="/Admin/Destination/AddIndex" class="btn btn-outline-primary">New Tour</a>
+
